@@ -8,11 +8,6 @@
 ```
 git clone https://ghproxy.com/https://github.com/liunian6/Nolan1.9.git /root/nolanjdc
 ```
-国外
-```
-git clone https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
-```
-
 
 2 拉取基础镜像以后不需要拉取镜像了
 ```
@@ -38,11 +33,11 @@ mkdir -p  Config && cd Config
 源码库已经关闭了Json 需要自行需找。
 
 ```
-wget -O Config.json  https://raw.githubusercontent.com/NolanHzy/nvjdc/main/Config.json
+wget -O Config.json  https://github.com/liunian6/Scripts/blob/unke/Config.json
 ```
 国内请使用
  ```
-wget -O Config.json   https://ghproxy.com/https://raw.githubusercontent.com/NolanHzy/nvjdc/main/Config.json
+wget -O Config.json   https://ghproxy.com/https://github.com/liunian6/Scripts/blob/unke/Config.json
 ```
 
 6 回到nolanjdc目录创建chromium文件夹并进入
@@ -74,10 +69,11 @@ cd  /root/nolanjdc
 10启动镜像
 
 ```
-sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)":/app \
+sudo docker run   --name nolanjdc -p 5703:80 -d  -v  "$(pwd)":/app \
 -v /etc/localtime:/etc/localtime:ro \
 -it --privileged=true  nolanhzy/nvjdc:latest
 ```
+上面是一条命令不是多条
 
 11查看 日志 
 
