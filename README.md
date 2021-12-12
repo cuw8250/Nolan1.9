@@ -6,7 +6,7 @@
 1拉源码
 国内
 ```
-git clone https://ghproxy.com/https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://ghproxy.com/https://github.com/liunian6/Nolan1.9/nvjdcdocker.git /root/nolanjdc
 ```
 国外
 ```
